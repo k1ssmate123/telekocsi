@@ -1,0 +1,16 @@
+.tartalom{
+    border-style: inherit;
+    border-width: 2px;
+    border-color:gray;
+    padding:10px;
+}
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+p{text-align: justify;}
+img{width:250px;}
+.kiemelt{font-weight: bold;}
