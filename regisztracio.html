@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,47 @@
     <title>Telekocsi</title>
     <link rel="stylesheet" href="css/telekocsi.css">
 </head>
+
 <body>
     <div class="tartalom">
-<h1>Telekocsi</h1>
-<div class="menu">
-    <div>Bemutatkozás</div>
-    <div>Sofőröknek</div>
-    <div>Utasoknak</div>
-    <div>Bejelentkezés</div>
-    <div>Regisztráció</div>
+        <h1>Telekocsi</h1>
+        <div class="menu">
+            <div>Bemutatkozás</div>
+            <div>Sofőröknek</div>
+            <div>Utasoknak</div>
+            <div>Bejelentkezés</div>
+            <div>Regisztráció</div>
 
 
-</div>
-
+        </div>
+        <h2>Regisztráció</h2>
+        <form action=""><label for="nev">Név: <input type="text" id="nev" name="nev"></label><label for="email">E-mail
+                cím: <input type="email" id="email" name="email"></label><label for="jelszo">Jelszó: <input
+                    type="password" id="jelszo" name="jelszo"></label><label for="jelszoism">Jelszó ismét: <input
+                    type="text" id="jelszoism" name="jelszoism"></label><button onclick="bekuldes()"></button></form>
     </div>
 
+<script>
+function bekuldes()
+{
+   nev=  document.getElementById("nev");
+   email=  document.getElementById("email");
+   jelszo=  document.getElementById("jelszo");
+   jelszoism=  document.getElementById("jelszoism");
+   if(nev=="" || email =="" || jelszo =="" || jelszoism=="")
+   {
+    alert("Tölts ki mindent!");    
+   }
+   if(jelszo != jelszoism)
+   {
+    alert("Jelszavak nem egyeznek!");
+    
+   }
+}
 
+
+
+</script>
 </body>
+
 </html>
